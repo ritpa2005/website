@@ -212,6 +212,7 @@ p a {
 .hero-section {
     text-align: center;
     padding-top: 50px;
+    padding-bottom: 25px;
 }
 
 .hero-section h1 {
