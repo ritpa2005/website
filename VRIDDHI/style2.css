@@ -1,0 +1,386 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color: #034b03;
+    padding: 10px 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    margin:2px;
+}
+
+.auth-buttons{
+    display:flex;
+    font-weight: bold;
+}
+.auth-buttons button,a{
+    
+    color:#32CD32;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-collapse {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navbar-nav {
+    display:flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+@media (min-width: 992px) {
+    .navbar-collapse {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-item {
+        width: auto;
+    }
+
+    .nav-link {
+        padding: 10px 20px;
+        display:inline;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-nav{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav button {
+    background-color: white;
+    color: #32CD32;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    max-width: fit-content;
+}
+
+nav button:hover {
+    color:white;
+    background-color: #32CD32;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px; 
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width:100%;
+}
+
+label, input, button, p {
+    margin: 10px 0;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #32CD32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #28a745;
+}
+
+p {
+    font-size: 14px;
+    text-align: center;
+}
+
+p a {
+    color: #32CD32;
+    cursor: pointer;
+}
+
+
+.hero-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero-section h1 {
+    font-size: 50px;
+}
+
+.hero-section p {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature {
+    margin: 20px;
+    text-align: center;
+    color: black;
+}
+
+.feature img {
+    max-width: 100px;
+    height: auto;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info a{
+    text-decoration: none;
+    padding: 5px;
+}
+.contact-info i{
+    padding:3px;
+}
+
+.contact{
+    align-items: center;
+    background-color: #0d0d0d;
+}
+
+.contact-form {
+    justify-content: center;
+    align-items: center;
+    background-color: #dfdfdf;
+    width: 50%;
+    text-align: center;
+}
+.modal-content{
+    align-items:center;
+}
+form {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    align-items: center;
+}
+
+label, input, textarea, button {
+    width: 80%;
+    margin: 10px 0;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #32CD32;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #28a745;
+}
+
+/* Add these styles to your existing styles.css file */
+
+.request-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.request-form{
+    width:100%;
+}
+.request-section h1 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #32CD32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #28a428;
+}
+
+.recommendation-list {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.recommendation-list h2 {
+    margin-bottom: 20px;
+}
+
+#recommendation-list {
+    list-style: none;
+    padding: 0;
+}
+
+#recommendation-list li {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: left;
+}

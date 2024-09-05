@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials and Guides - Vriddhi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+            <nav class="navbar">
+                
+                <button class="navbar-toggler" onclick="toggleNav()">☰</button>
+                <img src="logo.png" height="50vh">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="community.html">Community</a>
+                        <a class="nav-link" href="tutorials.html">Tutorials & Guides</a>
+                        <a class="nav-link" href="legal-bot.html">Legal AI - NYAYA</a>
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    
+                <div class="auth-buttons">
+                    <button>English</button>
+                    <a href = "#" onclick="openModal('loginModal');"><button>Login</button></a>
+                </div>
+            </nav>
+    </header>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" name="username" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="password" required>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#" onclick="openModal('signupModal'); closeModal('loginModal')">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('signupModal')">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <label for="signupUsername">Username:</label>
+                <input type="text" id="signupUsername" name="username" required>
+                <label for="signupEmail">Email:</label>
+                <input type="email" id="signupEmail" name="email" required>
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" name="password" required>
+                <button type="submit">Sign Up</button>
+                <p>Already have an account? <a href="#" onclick="openModal('loginModal'); closeModal('signupModal')">Login</a></p>
+            </form>
+        </div>
+    </div>
+    <main>
+        <div class="tutorials-section">
+            <h1>Farming Tutorials and Guides</h1>
+            <div class="tutorials-container">
+                <div class="tutorial-category">
+                    <h2>Farming Technologies</h2>
+                    <ul class="tutorial-list">
+                        <li><a href="path/to/tutorial1.html">Understanding Precision Farming</a></li>
+                        <li><a href="path/to/tutorial2.html">Introduction to Drones in Agriculture</a></li>
+                        <li><a href="path/to/tutorial3.html">Smart Irrigation Systems</a></li>
+                    </ul>
+                </div>
+                <div class="tutorial-category">
+                    <h2>Best Farming Practices</h2>
+                    <ul class="tutorial-list">
+                        <li><a href="path/to/tutorial4.html">Crop Rotation Benefits</a></li>
+                        <li><a href="path/to/tutorial5.html">Soil Health Management</a></li>
+                        <li><a href="path/to/tutorial6.html">Organic Farming Techniques</a></li>
+                    </ul>
+                </div>
+                <div class="tutorial-category">
+                    <h2>Sustainable Farming</h2>
+                    <ul class="tutorial-list">
+                        <li><a href="path/to/tutorial7.html">Conservation Tillage Methods</a></li>
+                        <li><a href="path/to/tutorial8.html">Agroforestry Practices</a></li>
+                        <li><a href="path/to/tutorial9.html">Water Conservation Strategies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script2.js"></script>
+</body>
+</html>

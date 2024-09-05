@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Off Season Sale - Vriddhi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+            <nav class="navbar">
+                
+                <button class="navbar-toggler" onclick="toggleNav()">☰</button>
+                <img src="logo.png" height="50vh">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="community.html">Community</a>
+                        <a class="nav-link" href="tutorials.html">Tutorials & Guides</a>
+                        <a class="nav-link" href="legal-bot.html">Legal AI - NYAYA</a>
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    
+                <div class="auth-buttons">
+                    <button>English</button>
+                    <a href = "#" onclick="openModal('loginModal');"><button>Login</button></a>
+                </div>
+            </nav>
+    </header>
+
+    <main>
+        <div class="request-section">
+            <h1>Crop Recommendations</h1>
+            <form id="request-form">
+                <div class="form-group">
+                    <label for="customer-name">Your Name:</label>
+                    <input type="text" id="customer-name" name="customer-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="customer-email">Your Email:</label>
+                    <input type="email" id="customer-email" name="customer-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="crop-recommendation">Crop Recommendation:</label>
+                    <textarea id="crop-recommendation" name="crop-recommendation" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <script src="script2.js"></script>
+</body>
+</html>
